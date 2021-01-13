@@ -178,9 +178,13 @@ public class demo {
         BigInteger bi4 = new BigInteger("100");
 
         System.out.println("bi1:" + bi1);
+        //加运算
         System.out.println(bi1.add(bi2));
+        //减
         System.out.println(bi1.subtract(bi2));
+        //乘
         System.out.println(bi1.multiply(bi2));
+        //除
         System.out.println(bi1.divide(bi2));
         BigInteger a[] = bi3.divideAndRemainder(bi4);
         System.out.println(a[0]);
@@ -204,11 +208,15 @@ public class demo {
         BigDecimal num6 = new BigDecimal("100");
         BigDecimal num7 = new BigDecimal("1.301");
         BigDecimal num8 = new BigDecimal("0.1");
-//
+////加运算
         System.out.println("0.09 + 0.01: " + num1.add(num2));
+        //减
         System.out.println("1.0 - 0.32: " + num3.subtract(num4));
+        //乘
         System.out.println("1.015 * 100: " + num5.multiply(num6));
+        //除
         System.out.println("1.301 / 100: " + num7.divide(num6));
+        //减
         System.out.println("1.0 - 0.12: " + num3.subtract(num8));
         System.out.println(num1);
     }
@@ -249,12 +257,14 @@ public class demo {
     }
 
     private static void number() {
+        //大串中的小串计数
         String maxString = "woaijavawozhenaijavawozhendeaijavawozhendehenaijavaxinbuxinwoaijavagun";
 
         int count = 0;
         int i = 0;
 //        maxString.indexOf("java",i) == -1
-        while(true){
+        while(true){//检查是否存在
+            //重置检索开始位置
             i = maxString.indexOf("java",i+1);
             System.out.println(i);
 
@@ -267,6 +277,7 @@ public class demo {
     }
 
     private static void turn() {
+        //字符串转为字符数组
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入一个字符串：");
         String s = sc.nextLine();
